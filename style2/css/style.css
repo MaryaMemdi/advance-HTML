@@ -1,0 +1,341 @@
+
+@import 'reset.css';
+@font-face{
+    font-family: 'vazir';
+    src: url(../fonts/vazir.eot) format('eot');
+    src: url(../fonts/vazir.ttf) format('truetype');
+    src: url(../fonts/vazir.woff) format('woff');
+    src: url(../fonts/vazir.woff2) format('woff2');
+}
+input, textarea{
+    font-family: vazir;
+}
+body{
+    direction: rtl;
+    font-family: 'vazir';
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-image: url(../img/bg-mac.png);
+    background-color: rgb(74, 104, 250);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px 450px;
+    height: 600px;
+    width: 100%;
+    
+    
+}
+
+ header nav{
+    width: 100%;
+    height: 70px;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+header nav ul li{
+    line-height: 4;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    color: #fff;
+}
+header .header-content{
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    margin: auto;
+
+}
+header .header-content h2{
+    margin-top: -150px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 50px;
+
+}
+
+
+/*about */
+
+.about{
+    width: 100%;
+}
+
+.about-title{
+    text-align: center;
+    margin: 50px 0;
+    
+}
+.about-title h2{
+    font-family: vazir;
+    font-size: 30px;
+    padding: 20px;
+
+}
+.about-title p{
+    font-size: 15px;
+    color: rgb(67, 67, 67);
+}
+
+.about-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+
+
+}
+.about-item{
+    flex: 0 0 calc(25% - 20px);
+    width: calc(25% - 20px);
+
+}
+
+.about-item img{
+    width: 100%;
+}
+.about-item h3{
+    padding: 10px;
+}
+.about-item p{
+    
+    color: #333;
+}
+
+.message{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/spacer/1.jpg);
+    margin: 50px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.message .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+.message-item{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+.message-item h4{
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.message-item p{
+    font-size: 17px;
+    color: #f5f5f5;
+}
+
+/* service*/
+
+.service{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    
+
+}
+.service .title{
+    padding-bottom: 40px;
+}
+.service-item{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+
+
+}
+.service-item .items{
+    flex: 0 0 calc(25% - 15px);
+    width: calc(25% - 15px);
+}
+.service-item .items svg{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.service-item .items h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+} 
+.service-item .items p{
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+.service-item .items a{
+    color: #fff;
+    background-color: rgb(85, 93, 248);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.service-item .items a:hover{
+    background-color: rgb(73, 81, 239) ;
+}
+
+/* work */
+
+.work{
+    width: 100;
+}
+.work .work-title{
+    width: 100;
+    text-align: center;
+}
+.work-title h3{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.work-title p{
+    font-size: 17px;
+    color: #333;
+}
+.work-list{
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+ 
+}
+.work-list ul{
+    width: 55%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.work-list ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+.work-list ul li span{
+    display: none;
+    position: absolute;
+}
+.work-list ul li:hover span{
+    top: 50%;
+    right: 50%;
+    display: block;
+}
+
+/* contact */
+.contact{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    
+    
+}
+.contact-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+.title h3{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.title p{
+    font-size: 17px;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+.contact-form form{
+    width: 50%;
+    margin: auto;
+
+}
+.contact-form form input{
+    width: 50%;
+    padding: 10px 0;
+    margin: 5px;
+    border-radius: 5px;
+    border-style: outset;
+   
+}
+.contact-form form input[type=submit]{
+    background-color: #4d78f9;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 60px;
+
+}
+.contact-form form input[type=submit]:hover{
+    background-color: #3c66e3;
+}
+.contact-form textarea{
+    width: 50%;
+
+    margin: 5px;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+    border-style: outset;
+    
+    
+}
+.contact-form textarea:focus{
+    outline: 3px solid #6483df;
+}
+.contact-form  input:focus {
+    outline: 3px solid #6483df;
+}
+.social {
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.social ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    
+}
+.social ul li{
+    padding:0 10px;
+}
+
+.social ul li a {
+    font-size: 25px;
+    color: #3c66e3;
+    padding: 0 5px;
+}
+.social ul li a:hover{
+    color: #5876cd;
+}

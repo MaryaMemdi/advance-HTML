@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot');
+    src : url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff') format('woff2');
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+    font-family: 'vazir';
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+
+
+
+header{
+    width: 100%;
+    background: #212121;
+}
+.hambergur-menu{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    margin-left: 40px;
+}
+
+header nav ul li a img{
+    width: 65px;
+}
+header nav ul li a:hover{
+    color: crimson;
+}
+
+
+header nav .auth{
+    color: #fff;
+}
+.home{
+    background: linear-gradient(45deg,rgb(113, 172, 249),#fff);
+}
+
+.home-content{
+    width: 100%;
+    padding: 50px 0;
+}
+.home-content-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.home-content-item{
+    width: 100%;
+    justify-content: space-between;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-content-item a{
+    width: calc(20% - 10px);
+    background-color: #fff;
+    color: #212121;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.home-content-item a img{
+    width: 80px;
+}
+.home .home-icon{
+    position: relative;
+    margin-top: 50px;
+
+}
+.home .home-icon img{
+    width: 100%;
+    vertical-align: bottom; /* baes mishe axs biyad paeen safhe */
+}
+.home .home-icon .abr img{
+    width: 30px;
+
+}
+
+.abr {
+    position: absolute;
+    left: 10%;
+    top:20%;
+    animation: abr 9s linear infinite;
+
+}
+
+.abr:nth-child(2){
+    position: absolute;
+    left: 30%;
+    top: 14%;
+    animation: abr 12s linear infinite;
+}
+.abr:nth-child(2){
+    position: absolute;
+    right:80%;
+    top: 16%;
+    animation: abr 7s linear infinite;
+}
+.abr:nth-child(3){
+    position: absolute;
+    left: 60%;
+    top: 0%;
+    animation: abr 4s linear infinite;
+}
+.abr:nth-child(4){
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    animation: abr 15s linear infinite;
+}
+.abr:nth-child(5){
+    position: absolute;
+    right: 45%;
+    top: 5%;
+    animation: abr 5s linear infinite;
+}
+.abr:nth-child(6){
+    position: absolute;
+    left: 45%;
+    top:20%;
+    animation: abr 10s linear infinite;
+}
+@keyframes abr{
+    0%,100%{
+        transform: translateY(15px);
+    }
+    25%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    75%{
+        transform: translateY(-15px);
+    }
+}
+.service{
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    
+    background: linear-gradient(-183deg,#fff 17%, rgb(218, 218, 218) 0); 
+}
+
+.service .service-title{
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+.service .service-title::before{
+    content:'' ;
+    position: absolute;
+    width: 400px;
+    height: 2px;
+    background-color: crimson;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.service-item{
+    width: calc(25% - 15px);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 30px 0;
+    box-shadow: 0 0 10px rgba(117,117,117,0.2);
+    
+
+}
+.service-item img{
+    width: 80px;
+}
+.service-item h5{
+    font-size: 15px;
+    padding: 10px;
+}
+.service-item small{
+    color: gray;
+}
+
+/*partners*/
+.partners{
+    width: 100%;
+    margin: 20px 0;
+}
+.partners .partner-title{
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.partners .partner-title::before{
+    content:'' ;
+    position: absolute;
+    width: 400px;
+    height: 2px;
+    background-color: crimson;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.partner-item{
+    width: 100%;
+    padding: 10px;
+    margin: 0 15px;
+    text-align: center;
+}
+.partner-item h4{
+    padding-top: 20px;
+}
+/*footer */
+footer{
+    background-color: #333;
+    padding: 50px 0;
+    //justify-content: space-between;
+}
+footer .footer{
+    display: flex;
+}
+.footer .social{
+    width: 33%;
+    align-items: center;
+}
+.footer .social h4{
+    color: #fff;
+}
+.footer .social ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.footer .social ul li{
+    margin-top: 20px;
+}
+.footer .social ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0 5px;
+    transition: all .3s ease;
+}
+.footer .social ul li a:hover{
+    color: gray;
+    border-radius: 1px solid gray;
+}
+
+.footer .access{
+    width: 33%;
+    text-align: center;
+    
+}
+
+.footer .access h4{
+    color: #fff;
+    padding-bottom: 10px;
+}
+.footer .access ul li{
+    padding-bottom: 7px;
+}
+.footer .access ul li a:hover{
+    color: gray;
+}
+.footer .namad{
+    width: 33%;
+    
+}
+@media screen {
+   
+    .hambergur-menu{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 100%;
+    }
+    header {
+        display: flex;
+        padding: 0 50px;
+    }
+    .home .home-content{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .home .home-content .wrapper{
+        padding: 0 50px;
+    }
+    /*.home .home-content .wrapper .home-content-item{
+        width: calc(33.33% - 10px);
+        flex-wrap: wrap;
+        display: flex;
+    }
+    */
+    .service .services{
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+    .service .services .service-item{
+        width: calc(50% - 20px);
+    }
+    .hambergur-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .home .home-content .wrapper .home-content-item{
+        width: calc(33.33% - 10px);
+       
+    }
+    .home .home-content .wrapper .home-content-item img{
+        width: 30px;
+    }
+    .service .services .service-item {
+        width: calc(50% - 20px);
+    }
+    .service .services .service-item img{
+        width: 40px;
+    }
+    .hambergur-menu{
+        display: block;
+    }
+    .activ{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    header nav{
+        height: 60px;
+    }
+    header nav ul{
+        position: absolute;
+        top: 60px;
+        background-color: #212121;
+        text-align: center;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        left: 0;
+        right: 0;
+        padding: 20px 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .home .home-content .home-content-item{
+        width: calc(50% - 10px);
+    }
+   
+    .service .services .service-title{
+        margin-bottom: 50px;
+    }
+    .service .service-item{
+        width: 100%;
+    }
+    footer .footer{
+        flex-wrap: wrap;
+    }
+    footer .social{
+        width: 100%;
+       
+    }
+    footer .access{
+        width: 100%;
+        margin-top: 50px;
+    }
+    footer .namad{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home .home-content .home-content-item{
+        width: 100%;
+    }
+    .service .service-item{
+        width: 100%;
+    
+    }
+}
+
